@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+  
+  shipping-form-nextjs:
+    build: ./shipping-form-nextjs
+    container_name: shipping-form-nextjs
+    ports:
+      - 3010:3010
+  
+  shipping-form-nestjs:
+    build: ./shipping-form-nestjs
+    container_name: shipping-form-nestjs
+    ports:
+      - 3005:3005
